@@ -1,0 +1,18 @@
+{
+  "npmScope": "myworkspace",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "the-flaming-ox-e2e": {
+      "tags": []
+    },
+    "the-flaming-ox": {
+      "tags": []
+    }
+  }
+}
