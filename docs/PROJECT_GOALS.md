@@ -220,3 +220,16 @@ Merges any two data structures into one (merge type must be indicated and data t
 - Cache Simulator?
 - Thread pool? (Maybe done through Web or Service Workers)
 - Sound Files?
+
+# Accessibility
+
+- Include Accessibility testing
+- Create Accessibility reports
+
+# Language
+
+- Support English (UK)
+
+# Security
+
+- Include security scanner
