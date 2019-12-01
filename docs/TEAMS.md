@@ -1,27 +1,30 @@
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [Legal](#legal)
+  - [Accessibility](#accessibility)
   - [Config](#config)
   - [Core](#core)
   - [Depend](#depend)
   - [Docs](#docs)
   - [Feature](#feature)
+  - [Language](#language)
+  - [Legal](#legal)
   - [Platform](#platform)
   - [QA](#qa)
-  - [Validate](#validate)
   - [Research](#research)
+  - [Security](#security)
+  - [Validate](#validate)
 
 ---
 
-## Legal
+## Accessibility
 
-Handles any and all of the legal material for this project.
+Responsible for testing accessibility flaws and meeting accessibility requirements.
 
 Owns:
 
-- LICENSE
-- DISCLAIMER
+- accessibility/\*
+- tools/accessibility/\*
 
 ## Config
 
@@ -43,6 +46,9 @@ Owns:
 
 - gitignore
 - angular.json
+- tools/build/\*
+- tools/env/\*
+- tools/git/\*
 
 ## Depend
 
@@ -53,6 +59,7 @@ Owns:
 - yarn.lock
 - package\*.json
 - node_modules/
+- tools/packages/\*
 
 ## Docs
 
@@ -74,6 +81,24 @@ Owns:
 
 - libs/\*
 
+## Language
+
+Responsible for supporting multiple language options.
+
+Owns:
+
+- language/\*
+- tools/language/\*
+
+## Legal
+
+Handles any and all of the legal material for this project.
+
+Owns:
+
+- legal/\*
+- tools/legal/\*
+
 ## Platform
 
 Responsible for all apps in the repo
@@ -91,6 +116,24 @@ Owns:
 - \*.spec.ts
 - tests/\*
 - any system tests
+- tools/tests/\*
+
+## Research
+
+Responsible for all research and trial code
+
+Owns:
+
+- research/\*
+
+## Security
+
+Responsible for security throughout the application
+
+Owns:
+
+- security/\*
+- tools/security/\*
 
 ## Validate
 
@@ -100,11 +143,4 @@ Owns:
 
 - logs/\*
 - reports/\*
-
-## Research
-
-Responsible for all research and trial code
-
-Owns:
-
-- research/\*
+- tools/validate/\*
