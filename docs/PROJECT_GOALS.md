@@ -1,68 +1,3 @@
-# Legal
-
-- Update DISCLAIMER quarterly
-- Make license dependency summary
-
-# Config
-
-- Update prettier config
-- Update tsconfig
-- Update tslint
-- Add custom tslint rules
-
-# Core
-
-## Environment Checking
-
-- Setup Agile branch development
-  - prod
-    - release branches
-  - dev
-    - feature branches
-- Yarn version checking
-  - > Use Yarn policies?
-- Node version checking
-- npm version checking
-- OS checking
-- Check for environment variables
-  - > Use Yarn run env
-
-## Build Process
-
-- Local environment build
-- AWS
-- Docker
-- Azure
-
-## Pipeline
-
-- Jenkins
-
-## Prod Environment
-
-- Get a domain name and set it up
-
-## Git
-
-- Github Actions
-- Webhooks
-- Bots
-
-# Depend
-
-- Installation Checking
-  - Check outdated packages
-    - > Use Yarn outdated
-  - Check for dependency vulnerabilities
-    - > Use Yarn audit
-  -
-- Add scripts to package.json
-
-# Docs
-
-- Add Markdown lint rules
-- Add documentation threshold checks
-
 # Features
 
 ## Data Structures
@@ -142,17 +77,44 @@ Merges any two data structures into one (merge type must be indicated and data t
 
 ## String Matching
 
+## Analytics
+
+## Logging
+
+## Octokit Repository Services
+
+## Shared Types
+
+## Email Services
+
 # Platform
 
 ## Home
+
+- Classes, Services, and Features
+- Web Apps
+- Testing
+- Research
+- License
+- Accessibility
+- Builds and Hosting
+- Git Bots
+- Dependencies and Tools
+- Security
+- Reports
+- Languages
 
 ## GPA Calculator
 
 ## Teacher and Class Average GPA Viewer
 
-## Shopping Site
+## Goal Organizer
+
+Editable table for goals, deadlines, reminders, and tracking
 
 ## Budget Manager
+
+## Shopping Site
 
 ## Investment Manager
 
@@ -173,6 +135,7 @@ Merges any two data structures into one (merge type must be indicated and data t
 ## Behavior Testing
 
 - UI Testing
+  - Visual Diff
 - Unit Testing
 - Integration Tests
 - Smoke (Functional) Tests
@@ -181,23 +144,13 @@ Merges any two data structures into one (merge type must be indicated and data t
 
 ## Non-behavior Testing
 
-- Environment Testing
-- Install Testing
-- Format Testing
 - Load & Stress Testing
 - Performance Testing
-- Security Testing
 - Compatibility Testing <!-- browser -->
-- Localization / Language Testing
-- Accessibility Testing
-
-## Add Test Thresholds
 
 # Validate
 
 - Test Reports
-- Analytics Reports
-- Logs
 - Summaries
 
 # Research
