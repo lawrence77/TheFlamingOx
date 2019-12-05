@@ -8,6 +8,8 @@ The file describes the configurations ued in the repo for the following set of t
   - [Custom Lint Rules](#custom-lint-rules)
 - [TsConfig](#tsconfig)
 
+---
+
 ## Prettier
 
 Prettier is an opinionated code formatter.
@@ -44,8 +46,6 @@ TsLint uses a file named tslint.json or tslint.yaml to configure which rules get
 | `defaultSeverity` | The severity level that is applied to rules in this config file as well as rules in any inherited config files which have their severity set to “default”. If undefined, “error” is used as the defaultSeverity.                                                              |
 | `linterOptions`   | An array of globs. Any file matching these globs will not be linted. All exclude patterns are relative to the configuration file they were specified in.                                                                                                                      |
 
----
-
 ### List of Rules
 
 Lint rules encode logic for syntactic & semantic checks of TypeScript source code.
@@ -56,6 +56,8 @@ Click [here](https://palantir.github.io/tslint/rules/) for the list of rules and
 If TSLint’s core rules don’t have all the lint checks you’re looking for, you may [write your own custom rules](https://palantir.github.io/tslint/develop/custom-rules/) or use custom rules that others have developed.
 
 Some commonly used custom rule packages in the TSLint community are listed in the [README](https://github.com/palantir/tslint/blob/master/README.md).
+
+---
 
 ## TsConfig
 
