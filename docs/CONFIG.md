@@ -4,13 +4,13 @@ The file describes the configurations ued in the repo for the following set of t
 
 - [Prettier](#prettier)
 - [TsLint](#tslint)
-  - [List of Rules](#list-of-rules)
+- [List of Rules](#list-of-rules)
   - [Custom Lint Rules](#custom-lint-rules)
 - [TsConfig](#tsconfig)
 
 ---
 
-## Prettier
+# Prettier
 
 Prettier is an opinionated code formatter.
 It is generally accepted that having a common style guide is valuable for a project and team but getting there is a very painful and unrewarding process.
@@ -33,7 +33,7 @@ People get very emotional around particular ways of writing code and nobody like
 
 ---
 
-## TsLint
+# TsLint
 
 TsLint uses a file named tslint.json or tslint.yaml to configure which rules get run and each of their options. [2]
 
@@ -46,12 +46,12 @@ TsLint uses a file named tslint.json or tslint.yaml to configure which rules get
 | `defaultSeverity` | The severity level that is applied to rules in this config file as well as rules in any inherited config files which have their severity set to “default”. If undefined, “error” is used as the defaultSeverity.                                                              |
 | `linterOptions`   | An array of globs. Any file matching these globs will not be linted. All exclude patterns are relative to the configuration file they were specified in.                                                                                                                      |
 
-### List of Rules
+# List of Rules
 
 Lint rules encode logic for syntactic & semantic checks of TypeScript source code.
 Click [here](https://palantir.github.io/tslint/rules/) for the list of rules and their descriptions.
 
-### Custom Lint Rules
+## Custom Lint Rules
 
 If TSLint’s core rules don’t have all the lint checks you’re looking for, you may [write your own custom rules](https://palantir.github.io/tslint/develop/custom-rules/) or use custom rules that others have developed.
 
@@ -59,7 +59,7 @@ Some commonly used custom rule packages in the TSLint community are listed in th
 
 ---
 
-## TsConfig
+# TsConfig
 
 The presence of a tsconfig.json file in a directory indicates that the directory is the root of a TypeScript project. The tsconfig.json file specifies the root files and the compiler options required to compile the project. A project is compiled in one of the following ways. [3]
 
