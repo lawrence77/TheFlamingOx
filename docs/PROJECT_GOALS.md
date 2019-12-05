@@ -186,3 +186,7 @@ Editable table for goals, deadlines, reminders, and tracking
 # Security
 
 - Include security scanner
+
+# Docs
+
+Add english grammar and spelling tooling to check

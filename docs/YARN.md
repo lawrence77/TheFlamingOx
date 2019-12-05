@@ -2,20 +2,20 @@
 
 Yarn is a package manager for your code.
 It allows you to use and share code with other developers from around the world.
-Yarn does this quickly, securely, and reliably so you don’t ever have to worry. [^1]
+Yarn does this quickly, securely, and reliably so you don’t ever have to worry. [1]
 
 By running CLI commands, Yarn manages dependencies and their versions.
 Additionally, Yarn can configure the installation of these dependencies.
-To see more information regarding managing dependencies, click [here](https://yarnpkg.com/en/docs/managing-dependencies).
-To view more details regarding installation options, click [here](https://yarnpkg.com/en/docs/installing-dependencies).
+To see more information about managing dependencies, click [here](https://yarnpkg.com/en/docs/managing-dependencies).
+To view more details about installation options, click [here](https://yarnpkg.com/en/docs/installing-dependencies).
 
 # Installation and Initialization
 
-Run the following command to install Yarn onto your computer: [^2]
+Run the following command to install Yarn onto your computer: [2]
 
 `brew install yarn`
 
-Afterword, run the following command to incorporate Yarn into a project: [^3]
+Afterword, run the following command to incorporate Yarn into a project: [3]
 
 `yarn init`
 
@@ -41,7 +41,6 @@ To see the full list of Yarn commands, click [here](https://yarnpkg.com/en/docs/
 Some Yarn commands include parameters and secondary commands.
 Review the api whenever using Yarn commands.
 
-[^1]: https://yarnpkg.com/en/docs/getting-started
-[^2]: https://yarnpkg.com/en/docs/install#mac-stable
-[^3]: https://yarnpkg.com/en/docs/usage
-[^4]: https://yarnpkg.com/en/docs/cli/
+[1]: https://yarnpkg.com/en/docs/getting-started
+[2]: https://yarnpkg.com/en/docs/install#mac-stable
+[3]: https://yarnpkg.com/en/docs/usage
