@@ -4,7 +4,7 @@ The file describes the configurations ued in the repo for the following set of t
 
 - [Prettier](#prettier)
 - [TsLint](#tslint)
-- [List of Rules](#list-of-rules)
+  - [List of Rules](#list-of-rules)
   - [Custom Lint Rules](#custom-lint-rules)
 - [TsConfig](#tsconfig)
 
@@ -46,7 +46,7 @@ TsLint uses a file named tslint.json or tslint.yaml to configure which rules get
 | `defaultSeverity` | The severity level that is applied to rules in this config file as well as rules in any inherited config files which have their severity set to “default”. If undefined, “error” is used as the defaultSeverity.                                                              |
 | `linterOptions`   | An array of globs. Any file matching these globs will not be linted. All exclude patterns are relative to the configuration file they were specified in.                                                                                                                      |
 
-# List of Rules
+## List of Rules
 
 Lint rules encode logic for syntactic & semantic checks of TypeScript source code.
 Click [here](https://palantir.github.io/tslint/rules/) for the list of rules and their descriptions.
