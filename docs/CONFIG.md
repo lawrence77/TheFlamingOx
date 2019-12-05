@@ -1,6 +1,12 @@
-# Repo Configuration
+<h1>Repo Configuration</h1>
 
 The file describes the configurations ued in the repo for the following set of tools.
+
+- [Prettier](#prettier)
+- [TsLint](#tslint)
+  - [List of Rules](#list-of-rules)
+  - [Custom Lint Rules](#custom-lint-rules)
+- [TsConfig](#tsconfig)
 
 ## Prettier
 
@@ -23,6 +29,8 @@ People get very emotional around particular ways of writing code and nobody like
 | `proseWrap`              | Prettier will wrap markdown text as-is since some services use a linebreak-sensitive renderer |
 | `endOfLine`              | Specify which end of line character(s) to use                                                 |
 
+---
+
 ## TsLint
 
 TsLint uses a file named tslint.json or tslint.yaml to configure which rules get run and each of their options. [2]
@@ -35,6 +43,8 @@ TsLint uses a file named tslint.json or tslint.yaml to configure which rules get
 | `jsRules`         | Same format as rules or explicit true to copy all rule configurations for JS-compatible rules from rules. These rules are applied to .js and .jsx files.                                                                                                                      |
 | `defaultSeverity` | The severity level that is applied to rules in this config file as well as rules in any inherited config files which have their severity set to “default”. If undefined, “error” is used as the defaultSeverity.                                                              |
 | `linterOptions`   | An array of globs. Any file matching these globs will not be linted. All exclude patterns are relative to the configuration file they were specified in.                                                                                                                      |
+
+---
 
 ### List of Rules
 
