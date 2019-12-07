@@ -2,8 +2,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+    "outDir": "dist/out-tsc",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -11,9 +12,11 @@
     "target": "es2015",
     "module": "esnext",
     "typeRoots": ["node_modules/@types"],
+    "resolveJsonModule": true,
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {}
   },
