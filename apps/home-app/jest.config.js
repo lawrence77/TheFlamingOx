@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'the-flaming-ox',
+  name: 'home-app',
   preset: '../../jest.config.js',
-  coverageDirectory: '../../coverage/apps/the-flaming-ox',
+  coverageDirectory: '../../coverage/apps/home-app',
   snapshotSerializers: [
     'jest-preset-angular/AngularSnapshotSerializer.js',
     'jest-preset-angular/HTMLCommentSerializer.js'

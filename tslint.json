@@ -131,20 +131,25 @@
       true,
       {
         "allow": [],
-        "depConstraints": [{
-          "sourceTag": "*",
-          "onlyDependOnLibsWithTags": ["*"]
-        }]
+        "depConstraints": [
+          {
+            "sourceTag": "*",
+            "onlyDependOnLibsWithTags": ["*"]
+          }
+        ]
       }
     ],
     "object-literal-sort-keys": false,
     "one-line": [true, "check-catch", "check-finally", "check-else"],
     "only-arrow-functions": true,
-    "ordered-imports": [true, {
-      "import-sources-order": "lowercase-last",
-      "grouped-imports": true,
-      "named-imports-order": "lowercase-last"
-    }],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-last",
+        "grouped-imports": true,
+        "named-imports-order": "lowercase-last"
+      }
+    ],
     "prefer-conditional-expression": true,
     "prefer-const": true,
     "prefer-for-of": true,
@@ -156,13 +161,16 @@
     "prefer-while": true,
     "radix": true,
     "restrict-plus-operands": true,
-    "space-before-function-paren": [true, {
-      "anonymous": "always",
-      "asyncArrow": "always",
-      "constructor": "never",
-      "method": "never",
-      "named": "never"
-    }],
+    "space-before-function-paren": [
+      true,
+      {
+        "anonymous": "always",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    ],
     "static-this": true,
     "strict-string-expressions": true,
     "template-banana-in-box": true,
@@ -176,12 +184,7 @@
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true,
     "variable-name": {
-      "options": [
-        "ban-keywords",
-        "check-format",
-        "allow-leading-underscore",
-        "allow-pascal-case"
-      ]
+      "options": ["ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
     }
   },
   "jsRules": {
@@ -248,12 +251,7 @@
     "unnecessary-else": true,
     "use-isnan": true,
     "variable-name": {
-      "options": [
-        "ban-keywords",
-        "check-format",
-        "allow-leading-underscore",
-        "allow-pascal-case"
-      ]
+      "options": ["ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
     }
   }
 }
