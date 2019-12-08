@@ -68,7 +68,6 @@
       }
     ],
     "newline-before-return": true,
-    "newline-per-chained-call": true,
     "no-angle-bracket-type-assertion": true,
     "no-arg": true,
     "no-boolean-literal-compare": true,
@@ -131,12 +130,10 @@
       true,
       {
         "allow": [],
-        "depConstraints": [
-          {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
-          }
-        ]
+        "depConstraints": [{
+          "sourceTag": "*",
+          "onlyDependOnLibsWithTags": ["*"]
+        }]
       }
     ],
     "object-literal-sort-keys": false,
@@ -200,7 +197,6 @@
     "jsdoc-format": [true, "check-multiline-start"],
     "label-position": true,
     "newline-before-return": true,
-    "newline-per-chained-call": true,
     "no-angle-bracket-type-assertion": true,
     "no-arg": true,
     "no-boolean-literal-compare": true,
