@@ -1,6 +1,9 @@
 {
   "extends": "../../tslint.json",
   "rules": {
+    "no-floating-promises": false,
+    "completed-docs": false,
+    "no-unnecessary-class": false,
     "directive-selector": [true, "attribute", "myworkspace", "camelCase"],
     "component-selector": [true, "element", "myworkspace", "kebab-case"]
   }
