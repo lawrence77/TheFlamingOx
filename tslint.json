@@ -174,7 +174,6 @@
     "template-no-negated-async": true,
     "triple-equals": [true, "allow-null-check"],
     "typedef": true,
-    "typeof-compare": true,
     "unified-signatures": true,
     "unnecessary-else": true,
     "use-isnan": true,
@@ -243,7 +242,6 @@
     "restrict-plus-operands": true,
     "static-this": true,
     "triple-equals": [true, "allow-null-check"],
-    "typeof-compare": true,
     "unnecessary-else": true,
     "use-isnan": true,
     "variable-name": {
