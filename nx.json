@@ -1,5 +1,5 @@
 {
-  "npmScope": "myworkspace",
+  "npmScope": "TheFlamingOx",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
