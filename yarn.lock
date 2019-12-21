@@ -982,6 +982,23 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@clr/angular@^2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@clr/angular/-/angular-2.3.4.tgz#a4ba0c52ef3f648a9109efb7b60d226d0a15e501"
+  integrity sha512-+8zE/ZIQDOuaiAfHdq2jXtq8I3DaifBXfS+K+LkR4RA2UuqXdHvD5HKuFu8t4qBYM2BfWp8G10a0HM+ueWenYg==
+  dependencies:
+    tslib "^1.9.0"
+
+"@clr/icons@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@clr/icons/-/icons-2.3.4.tgz#6209ac44251abfb193b2ac690c2510d22345bcce"
+  integrity sha512-ycKH3+ySWIZnP3RrNyI9KkDBwA4mBP52LWU13MXf398kqAnuHDteMerAZowGfN6CHy++tAGqXulXoBsjTI8PCA==
+
+"@clr/ui@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@clr/ui/-/ui-2.3.4.tgz#58c206ec91d4458689a7a3009f03d7d6a8e3d6b6"
+  integrity sha512-Mfi2L7812DD8E9Q4v/ndFTvuTo7qf/GR6kZ8HJZsau5I+1mQr+mH80JfwVThsyttRpzwqQh7+aypIlWklcXrcw==
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"
@@ -1562,6 +1579,11 @@
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/wast-parser" "1.8.5"
     "@xtuc/long" "4.2.2"
+
+"@webcomponents/custom-elements@^1.0.0":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@webcomponents/custom-elements/-/custom-elements-1.3.1.tgz#6a654d4d8cbdcb6344af15e9c518c2de8416b3f5"
+  integrity sha512-busXK/Mkz6NcvUK8izF9pePo6gPVjybO7vopX2NkZow6U7ZCjUvCGzcS3tCIURAD8WLrAI9MW3PqslOQOYa4lg==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
