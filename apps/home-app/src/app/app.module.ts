@@ -12,6 +12,9 @@ import { PageNotFoundPageComponent } from './page-not-found-page/page-not-found-
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ResearchPageComponent } from './research-page/research-page.component';
 import { routerConfig } from './router-config';
+import { ProjectsMenuComponent } from './home-side-nav/projects-menu/projects-menu.component';
+import { ResearchMenuComponent } from './home-side-nav/research-menu/research-menu.component';
+import { LicenseMenuComponent } from './home-side-nav/license-menu/license-menu.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { routerConfig } from './router-config';
     ProjectsPageComponent,
     ResearchPageComponent,
     LicensePageComponent,
-    PageNotFoundPageComponent
+    PageNotFoundPageComponent,
+    ProjectsMenuComponent,
+    ResearchMenuComponent,
+    LicenseMenuComponent
   ],
   imports: [
     BrowserModule,
