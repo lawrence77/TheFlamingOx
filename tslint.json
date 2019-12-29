@@ -26,7 +26,6 @@
     ],
     "comment-format": [true, "check-space", "check-uppercase", "allow-trailing-lowercase"],
     "component-selector": [true, "element", "app", "kebab-case"],
-    "curly": [true, "as-needed"],
     "deprecation": {
       "severity": "warn"
     },
@@ -68,7 +67,6 @@
       }
     ],
     "newline-before-return": true,
-    "newline-per-chained-call": true,
     "no-angle-bracket-type-assertion": true,
     "no-arg": true,
     "no-boolean-literal-compare": true,
@@ -122,7 +120,6 @@
     "no-unsafe-any": true,
     "no-unsafe-finally": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "no-var-requires": true,
     "no-void-expression": true,
@@ -140,11 +137,14 @@
     "object-literal-sort-keys": false,
     "one-line": [true, "check-catch", "check-finally", "check-else"],
     "only-arrow-functions": true,
-    "ordered-imports": [true, {
-      "import-sources-order": "lowercase-last",
-      "grouped-imports": true,
-      "named-imports-order": "lowercase-last"
-    }],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-last",
+        "grouped-imports": true,
+        "named-imports-order": "lowercase-last"
+      }
+    ],
     "prefer-conditional-expression": true,
     "prefer-const": true,
     "prefer-for-of": true,
@@ -156,32 +156,29 @@
     "prefer-while": true,
     "radix": true,
     "restrict-plus-operands": true,
-    "space-before-function-paren": [true, {
-      "anonymous": "always",
-      "asyncArrow": "always",
-      "constructor": "never",
-      "method": "never",
-      "named": "never"
-    }],
+    "space-before-function-paren": [
+      true,
+      {
+        "anonymous": "always",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    ],
     "static-this": true,
     "strict-string-expressions": true,
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "triple-equals": [true, "allow-null-check"],
     "typedef": true,
-    "typeof-compare": true,
     "unified-signatures": true,
     "unnecessary-else": true,
     "use-isnan": true,
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true,
     "variable-name": {
-      "options": [
-        "ban-keywords",
-        "check-format",
-        "allow-leading-underscore",
-        "allow-pascal-case"
-      ]
+      "options": ["ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
     }
   },
   "jsRules": {
@@ -197,7 +194,6 @@
     "jsdoc-format": [true, "check-multiline-start"],
     "label-position": true,
     "newline-before-return": true,
-    "newline-per-chained-call": true,
     "no-angle-bracket-type-assertion": true,
     "no-arg": true,
     "no-boolean-literal-compare": true,
@@ -244,16 +240,10 @@
     "restrict-plus-operands": true,
     "static-this": true,
     "triple-equals": [true, "allow-null-check"],
-    "typeof-compare": true,
     "unnecessary-else": true,
     "use-isnan": true,
     "variable-name": {
-      "options": [
-        "ban-keywords",
-        "check-format",
-        "allow-leading-underscore",
-        "allow-pascal-case"
-      ]
+      "options": ["ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
     }
   }
 }

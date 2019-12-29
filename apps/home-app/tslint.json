@@ -1,0 +1,11 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "no-floating-promises": false,
+    "completed-docs": false,
+    "no-unnecessary-class": false,
+    "no-unsafe-any": false,
+    "directive-selector": [true, "attribute", "home", "camelCase"],
+    "component-selector": [true, "element", "home", "kebab-case"]
+  }
+}
