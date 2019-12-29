@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
 import { ResearchPageComponent } from './research-page.component';
 
@@ -8,9 +8,8 @@ describe('ResearchPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResearchPageComponent ]
-    })
-    .compileComponents();
+      declarations: [ResearchPageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('ResearchPageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the `research-page` component', () => {
     expect(component).toBeTruthy();
   });
 });

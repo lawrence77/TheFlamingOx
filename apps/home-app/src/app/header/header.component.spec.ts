@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { ClarityModule } from '@clr/angular';
 
 import { HeaderComponent } from './header.component';
 
@@ -8,7 +10,8 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderComponent]
+      declarations: [HeaderComponent],
+      imports: [ClarityModule, RouterTestingModule]
     }).compileComponents();
   }));
 
@@ -18,7 +21,7 @@ describe('HeaderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the `header` component', () => {
     expect(component).toBeTruthy();
   });
 });

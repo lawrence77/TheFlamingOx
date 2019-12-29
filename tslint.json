@@ -26,7 +26,6 @@
     ],
     "comment-format": [true, "check-space", "check-uppercase", "allow-trailing-lowercase"],
     "component-selector": [true, "element", "app", "kebab-case"],
-    "curly": [true, "as-needed"],
     "deprecation": {
       "severity": "warn"
     },

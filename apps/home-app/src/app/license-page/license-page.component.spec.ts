@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
 import { LicensePageComponent } from './license-page.component';
 
@@ -8,9 +8,8 @@ describe('LicensePageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LicensePageComponent ]
-    })
-    .compileComponents();
+      declarations: [LicensePageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('LicensePageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the `license-page` component', () => {
     expect(component).toBeTruthy();
   });
 });
