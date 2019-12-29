@@ -13,6 +13,9 @@
     },
     "home-app": {
       "tags": []
+    },
+    "log-service": {
+      "tags": []
     }
   }
 }

@@ -21,10 +21,7 @@
             "polyfills": "apps/home-app/src/polyfills.ts",
             "tsConfig": "apps/home-app/tsconfig.app.json",
             "aot": false,
-            "assets": [
-              "apps/home-app/src/favicon.ico",
-              "apps/home-app/src/assets"
-            ],
+            "assets": ["apps/home-app/src/favicon.ico", "apps/home-app/src/assets"],
             "styles": [
               "node_modules/@clr/icons/clr-icons.min.css",
               "node_modules/@clr/ui/clr-ui.min.css",
@@ -84,14 +81,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/home-app/tsconfig.app.json",
-              "apps/home-app/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/home-app/**"
-            ]
+            "tsConfig": ["apps/home-app/tsconfig.app.json", "apps/home-app/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!apps/home-app/**"]
           }
         },
         "test": {
@@ -125,16 +116,34 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/home-app-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/home-app-e2e/**"
-            ]
+            "tsConfig": ["apps/home-app-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/home-app-e2e/**"]
           }
         }
       }
+    },
+    "log-service": {
+      "projectType": "library",
+      "root": "libs/log-service",
+      "sourceRoot": "libs/log-service/src",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/log-service/tsconfig.lib.json", "libs/log-service/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/log-service/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/log-service/jest.config.js",
+            "tsConfig": "libs/log-service/tsconfig.spec.json",
+            "setupFile": "libs/log-service/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

@@ -18,7 +18,9 @@
     "skipDefaultLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@log-service": ["libs/log-service/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
