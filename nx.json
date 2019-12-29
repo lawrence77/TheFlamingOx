@@ -16,6 +16,12 @@
     },
     "log-service": {
       "tags": []
+    },
+    "console-service": {
+      "tags": []
+    },
+    "shared": {
+      "tags": []
     }
   }
 }
