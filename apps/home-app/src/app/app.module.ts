@@ -6,34 +6,22 @@ import { ClarityModule } from '@clr/angular';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { HomeSideNavComponent } from './home-side-nav/home-side-nav.component';
-import { LicensePageComponent } from './license-page/license-page.component';
+import { LicenseModule } from './license-page/license.module';
 import { PageNotFoundPageComponent } from './page-not-found-page/page-not-found-page.component';
-import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { ResearchPageComponent } from './research-page/research-page.component';
-import { routerConfig } from './router-config';
-import { ProjectsMenuComponent } from './home-side-nav/projects-menu/projects-menu.component';
-import { ResearchMenuComponent } from './home-side-nav/research-menu/research-menu.component';
-import { LicenseMenuComponent } from './home-side-nav/license-menu/license-menu.component';
+import { ProjectsModule } from './projects-page/projects.module';
+import { ResearchModule } from './research-page/research.module';
+import { appRouterConfig } from './router-config';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeSideNavComponent,
-    ProjectsPageComponent,
-    ResearchPageComponent,
-    LicensePageComponent,
-    PageNotFoundPageComponent,
-    ProjectsMenuComponent,
-    ResearchMenuComponent,
-    LicenseMenuComponent
-  ],
+  declarations: [AppComponent, HeaderComponent, PageNotFoundPageComponent],
   imports: [
     BrowserModule,
     ClarityModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routerConfig, { useHash: true })
+    LicenseModule,
+    ProjectsModule,
+    ResearchModule,
+    RouterModule.forRoot(appRouterConfig, { useHash: true })
   ],
   providers: [],
   bootstrap: [AppComponent]

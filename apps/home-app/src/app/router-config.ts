@@ -5,10 +5,13 @@ import { PageNotFoundPageComponent } from './page-not-found-page/page-not-found-
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { ResearchPageComponent } from './research-page/research-page.component';
 
-export const routerConfig: Routes = [
-  { path: 'projects', component: ProjectsPageComponent },
-  { path: 'research', component: ResearchPageComponent },
-  { path: 'licenses', component: LicensePageComponent },
+export const appRouterConfig: Routes = [
   { path: '', redirectTo: 'projects', pathMatch: 'full' },
   { path: '**', component: PageNotFoundPageComponent }
 ];
+
+export const researchRouterConfig: Routes = [{ path: 'research', component: ResearchPageComponent }];
+
+export const projectRouterConfig: Routes = [{ path: 'projects', component: ProjectsPageComponent }];
+
+export const licenseRouterConfig: Routes = [{ path: 'licenses', component: LicensePageComponent }];
