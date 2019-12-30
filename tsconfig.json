@@ -20,7 +20,6 @@
     "baseUrl": ".",
     "paths": {
       "@log-service": ["libs/log-service/src/index.ts"],
-      "@console-service": ["libs/console-service/src/index.ts"],
       "@shared": ["libs/shared/src/index.ts"]
     }
   },

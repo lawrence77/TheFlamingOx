@@ -145,29 +145,6 @@
       },
       "schematics": {}
     },
-    "console-service": {
-      "projectType": "library",
-      "root": "libs/console-service",
-      "sourceRoot": "libs/console-service/src",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": ["libs/console-service/tsconfig.lib.json", "libs/console-service/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**", "!libs/console-service/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/console-service/jest.config.js",
-            "tsConfig": "libs/console-service/tsconfig.spec.json",
-            "setupFile": "libs/console-service/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {}
-    },
     "shared": {
       "projectType": "library",
       "root": "libs/shared",
