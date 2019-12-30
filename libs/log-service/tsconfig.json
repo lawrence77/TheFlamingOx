@@ -1,7 +1,11 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
+    "moduleResolution": "node",
+    "target": "es2015",
+    "module": "CommonJS",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"]
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts", "../../test-script.test.ts", "src/lib/Console/test-script.mjs"]
 }
