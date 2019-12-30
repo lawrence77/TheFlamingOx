@@ -1,5 +1,5 @@
 // Run: npx ts-node -r tsconfig-paths/register --project=./libs/log-service/tsconfig.lib.json libs/log-service/src/lib/Console/test-script.ts
-import { CodeHighlightLanguages, LogLevel } from '@shared';
+import { CodeHighlightLanguages, LogLevel, delay } from '@shared';
 
 import { AdvancedConsole } from './advance-console-service';
 
@@ -89,3 +89,10 @@ output.log(LogLevel.Error, tempFunction);
 output.log(LogLevel.All, tempObject);
 output.codeHighlight(LogLevel.Info, CodeHighlightLanguages.Typescript, tempCode);
 output.codeHighlight(LogLevel.Info, CodeHighlightLanguages.Json, tempJson);
+
+const spinner = output.getSpinner(LogLevel.Info, 'dots', 'Testing');
+
+// tslint:disable-next-line: no-floating-promises
+delay(3).then(() => {
+  spinner.succeed('Succeeded');
+});

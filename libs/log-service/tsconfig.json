@@ -7,5 +7,5 @@
     "module": "CommonJS",
     "lib": ["es5", "es6", "es7", "es2017", "dom"]
   },
-  "include": ["**/*.ts", "../../test-script.test.ts", "src/lib/Console/test-script.mjs"]
+  "include": ["**/*.ts"]
 }

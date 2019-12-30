@@ -1,12 +1,12 @@
 import { LogLevel } from '@shared';
 
-import { ISimpleLogger } from '../models/simple-logger-interface';
+import { ISimpleLogger } from '../models';
 
 /**
  * Outputs messages to the console.
  */
 export class Console implements ISimpleLogger {
-  constructor(private readonly logLevel: LogLevel) {}
+  constructor(protected readonly logLevel: LogLevel) {}
 
   /**
    * Displays parameter to console
@@ -14,9 +14,13 @@ export class Console implements ISimpleLogger {
    * @param entity Print this parameter
    */
   public log(logLevel: LogLevel, entity: any) {
-    if (this.logLevel !== LogLevel.None && logLevel <= this.logLevel) {
+    if (this.isValidLevel(logLevel)) {
       this.helper(logLevel, entity);
     }
+  }
+
+  protected isValidLevel(logLevel: LogLevel) {
+    return this.logLevel !== LogLevel.None && logLevel <= this.logLevel;
   }
 
   private helper(logLevel: LogLevel, entity: any) {

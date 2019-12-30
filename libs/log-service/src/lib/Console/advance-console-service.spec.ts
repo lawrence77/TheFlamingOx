@@ -71,6 +71,10 @@ describe('Console', () => {
     // TODO
   });
 
+  xit('should display the spinner', () => {
+    // TODO
+  });
+
   afterAll(() => {
     jest.clearAllMocks();
   });

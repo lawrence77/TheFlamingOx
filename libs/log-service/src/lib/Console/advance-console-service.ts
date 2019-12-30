@@ -1,5 +1,8 @@
 import { CodeHighlightLanguages, LogLevel } from '@shared';
 import { highlight } from 'cli-highlight';
+import ora from 'ora';
+
+import { spinnerOptions } from '../models';
 
 import { Console } from './simple-console-service';
 
@@ -26,9 +29,29 @@ export class AdvancedConsole extends Console {
   }
 
   /**
-   * Shows a spinner in the CLI
+   * Shows a spinner in the CLI.
+   * Note: Ora version 4.0^ doesn't work in Typescript yet. Using version 3.4.0
+   * @param logLevel Set the log level for the spinner display
+   * @param text Set the text following the spinner
+   * @returns An ora spinner or undefined
    */
-  public showSpinner() {
-    // TODO
+  public getSpinner(
+    logLevel: LogLevel,
+    spinnerType: spinnerOptions,
+    text: string,
+    indent?: number
+  ): ora.Ora | undefined {
+    if (this.isValidLevel(logLevel)) {
+      // More options here: https://www.npmjs.com/package/ora
+      const options = {
+        text,
+        spinner: spinnerType,
+        indent: indent || 0
+      };
+
+      return ora(options).start();
+    }
+
+    return undefined;
   }
 }
