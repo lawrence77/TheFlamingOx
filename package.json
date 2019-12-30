@@ -38,13 +38,14 @@
     "@angular/platform-browser-dynamic": "^8.2.0",
     "@angular/router": "^8.2.0",
     "@clr/angular": "^2.3.4",
+    "@clr/icons": "2.3.4",
+    "@clr/ui": "2.3.4",
     "@nrwl/angular": "8.9.0",
+    "@webcomponents/custom-elements": "^1.0.0",
+    "cli-highlight": "^2.1.4",
     "core-js": "^2.5.4",
     "rxjs": "~6.4.0",
-    "zone.js": "^0.9.1",
-    "@clr/ui": "2.3.4",
-    "@clr/icons": "2.3.4",
-    "@webcomponents/custom-elements": "^1.0.0"
+    "zone.js": "^0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.14",
