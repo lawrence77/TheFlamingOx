@@ -138,8 +138,7 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/log-service/jest.config.js",
-            "tsConfig": "libs/log-service/tsconfig.spec.json",
-            "setupFile": "libs/log-service/src/test-setup.ts"
+            "tsConfig": "libs/log-service/tsconfig.spec.json"
           }
         }
       },
