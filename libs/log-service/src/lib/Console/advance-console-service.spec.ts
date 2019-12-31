@@ -75,6 +75,10 @@ describe('Console', () => {
     // TODO
   });
 
+  xit('should print the boxed information', () => {
+    // TODO
+  });
+
   afterAll(() => {
     jest.clearAllMocks();
   });

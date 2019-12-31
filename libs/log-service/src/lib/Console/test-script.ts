@@ -87,8 +87,15 @@ output.log(LogLevel.Info, tempString);
 output.log(LogLevel.Warn, tempArray);
 output.log(LogLevel.Error, tempFunction);
 output.log(LogLevel.All, tempObject);
+
 output.codeHighlight(LogLevel.Info, CodeHighlightLanguages.Typescript, tempCode);
 output.codeHighlight(LogLevel.Info, CodeHighlightLanguages.Json, tempJson);
+
+output.box(LogLevel.Info, 'Important Information');
+output.box(LogLevel.Info, 'Hello World', { dimBorder: true });
+output.box(LogLevel.Info, 'Foo', { align: 'center', float: 'center' });
+output.box(LogLevel.Info, 'Baz', { float: 'left', padding: 10, margin: 4, borderColor: 'cyan', dimBorder: true });
+output.box(LogLevel.Info, 'Last info', { padding: 2, margin: 1, borderColor: 'green', backgroundColor: 'black' });
 
 const spinner = output.getSpinner(LogLevel.Info, 'dots', 'Testing');
 
