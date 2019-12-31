@@ -19,7 +19,7 @@ export class AdvancedConsole extends Console {
 
   /**
    * Displays a message within a box in the CLI
-   * Note: Version 4.2.0 doesn't work in Typescript yet. Using version 3.0.0
+   * Note: Boxen version 4.2.0 doesn't work in Typescript yet. Using version 3.0.0
    * @param logLevel Set the log level for the message
    * @param message This is the text that goes inside the box
    * @param options Optional configuration for the displaying the box
