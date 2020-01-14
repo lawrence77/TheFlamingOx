@@ -44,6 +44,7 @@
     "@webcomponents/custom-elements": "^1.0.0",
     "boxen": "3.0.0",
     "cli-highlight": "^2.1.4",
+    "cli-table3": "^0.5.1",
     "core-js": "^2.5.4",
     "ora": "3.4.0",
     "rxjs": "~6.4.0",

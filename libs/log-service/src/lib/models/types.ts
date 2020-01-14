@@ -15,3 +15,15 @@ export type CLIColors =
   | 'white'
   | 'gray'
   | HexColor;
+
+export type Alignment = 'center' | 'left' | 'right';
+export type VerticalAlignment = 'top' | 'center' | 'bottom';
+
+export type Spacing =
+  | number
+  | {
+      bottom: number;
+      left: number;
+      right: number;
+      top: number;
+    };

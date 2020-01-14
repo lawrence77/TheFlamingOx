@@ -1,10 +1,19 @@
 import { CodeHighlightLanguages, LogLevel } from '@shared';
 import boxen from 'boxen';
 import { highlight } from 'cli-highlight';
+import Table, {
+  CrossTable,
+  CrossTableRow,
+  HorizontalAlignment,
+  HorizontalTable,
+  HorizontalTableRow,
+  VerticalTable,
+  VerticalTableRow
+} from 'cli-table3';
 import ora from 'ora';
 
-import { SpinnerOptions } from '../models';
-import { IBoxOptions } from '../models/box-options-interface';
+import { ICrossRows, IHorizontalRows, ITableOptions, IVerticalRows, SpinnerOptions } from '../models';
+import { IBoxOptions } from '../models/box-options.interface';
 
 import { Console } from './simple-console-service';
 
@@ -76,5 +85,40 @@ export class AdvancedConsole extends Console {
     }
 
     return undefined;
+  }
+
+  /**
+   * Prints a table on the terminal
+   * @param logLevel Set the log level of the display
+   * @param data Data to display in the table
+   * @param options Configuring the table
+   */
+  public table(logLevel: LogLevel, dataRows: IHorizontalRows | IVerticalRows | ICrossRows, options?: ITableOptions) {
+    let defaultOptions = {};
+    if (options) {
+      defaultOptions = {
+        ...options
+      };
+    }
+
+    switch (dataRows.type) {
+      case 'Cross':
+        const crossTable = new Table(defaultOptions) as CrossTable;
+        crossTable.push(...dataRows.rows);
+        this.log(logLevel, crossTable.toString());
+        break;
+
+      case 'Horizontal':
+        const normalTable = new Table(defaultOptions) as HorizontalTable;
+        normalTable.push(...dataRows.rows);
+        this.log(logLevel, normalTable.toString());
+        break;
+
+      case 'Vertical':
+        const verticalTable = new Table(defaultOptions) as VerticalTable;
+        verticalTable.push(...dataRows.rows);
+        this.log(logLevel, verticalTable.toString());
+        break;
+    }
   }
 }
