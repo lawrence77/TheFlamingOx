@@ -1,18 +1,10 @@
 import { CodeHighlightLanguages, LogLevel } from '@shared';
 import boxen from 'boxen';
 import { highlight } from 'cli-highlight';
-import Table, {
-  CrossTable,
-  CrossTableRow,
-  HorizontalAlignment,
-  HorizontalTable,
-  HorizontalTableRow,
-  VerticalTable,
-  VerticalTableRow
-} from 'cli-table3';
+import Table from 'cli-table3';
 import ora from 'ora';
 
-import { ICrossRows, IHorizontalRows, ITableOptions, IVerticalRows, SpinnerOptions } from '../models';
+import { ITableOptions, SpinnerOptions } from '../models';
 import { IBoxOptions } from '../models/box-options.interface';
 
 import { Console } from './simple-console-service';
@@ -24,7 +16,6 @@ export class AdvancedConsole extends Console {
   // TODO
   // CLI-Progress https://www.npmjs.com/package/cli-progress
   // Chalk https://www.npmjs.com/package/chalk
-  // Table https://www.npmjs.com/package/cli-table3
 
   /**
    * Displays a message within a box in the CLI
@@ -89,36 +80,15 @@ export class AdvancedConsole extends Console {
 
   /**
    * Prints a table on the terminal
+   * Check options here: https://www.npmjs.com/package/cli-table3
    * @param logLevel Set the log level of the display
    * @param data Data to display in the table
    * @param options Configuring the table
    */
-  public table(logLevel: LogLevel, dataRows: IHorizontalRows | IVerticalRows | ICrossRows, options?: ITableOptions) {
-    let defaultOptions = {};
-    if (options) {
-      defaultOptions = {
-        ...options
-      };
-    }
+  public table(logLevel: LogLevel, dataRows: any[], options?: ITableOptions) {
+    const currTable = options ? new Table(options) : new Table();
+    currTable.push(...dataRows);
 
-    switch (dataRows.type) {
-      case 'Cross':
-        const crossTable = new Table(defaultOptions) as CrossTable;
-        crossTable.push(...dataRows.rows);
-        this.log(logLevel, crossTable.toString());
-        break;
-
-      case 'Horizontal':
-        const normalTable = new Table(defaultOptions) as HorizontalTable;
-        normalTable.push(...dataRows.rows);
-        this.log(logLevel, normalTable.toString());
-        break;
-
-      case 'Vertical':
-        const verticalTable = new Table(defaultOptions) as VerticalTable;
-        verticalTable.push(...dataRows.rows);
-        this.log(logLevel, verticalTable.toString());
-        break;
-    }
+    this.log(logLevel, currTable.toString());
   }
 }

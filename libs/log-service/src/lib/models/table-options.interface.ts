@@ -1,5 +1,3 @@
-import Table from 'cli-table3';
-
 import { Alignment, VerticalAlignment } from './types';
 
 export interface ITableOptions {
@@ -12,21 +10,6 @@ export interface ITableOptions {
   style?: StyleOption;
   truncate?: string;
   wordWrap?: boolean;
-}
-
-export interface IHorizontalRows {
-  rows: Table.HorizontalTableRow[];
-  type: 'Horizontal';
-}
-
-export interface IVerticalRows {
-  rows: Table.VerticalTableRow[];
-  type: 'Vertical';
-}
-
-export interface ICrossRows {
-  rows: Table.CrossTableRow[];
-  type: 'Cross';
 }
 
 type TableBorder = Partial<{

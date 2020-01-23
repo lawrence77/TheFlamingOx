@@ -1,8 +1,6 @@
 // Run: npx ts-node -r tsconfig-paths/register --project=./libs/log-service/tsconfig.lib.json libs/log-service/src/lib/Console/test-script.ts
 import { CodeHighlightLanguages, LogLevel, delay } from '@shared';
 
-import { IHorizontalRows } from '../models';
-
 import { AdvancedConsole } from './advance-console-service';
 
 const output = new AdvancedConsole(LogLevel.All);
@@ -81,7 +79,7 @@ const tempJson = `
 }
 `;
 
-//#endregion
+// #endregion
 
 output.log(LogLevel.Trace, tempBoolean);
 output.log(LogLevel.Config, tempNumber);
@@ -99,11 +97,10 @@ output.box(LogLevel.Info, 'Foo', { align: 'center', float: 'center' });
 output.box(LogLevel.Info, 'Baz', { float: 'left', padding: 10, margin: 4, borderColor: 'cyan', dimBorder: true });
 output.box(LogLevel.Info, 'Last info', { padding: 2, margin: 1, borderColor: 'green', backgroundColor: 'black' });
 
-const spinner = output.getSpinner(LogLevel.Info, 'dots', 'Testing');
-
-const rows: IHorizontalRows = { type: 'Horizontal', rows: [['hello', 'world'], ['sup', 'dude']] };
+const rows = [['hello', 'world'], ['sup', 'dude']];
 output.table(LogLevel.Info, rows, { head: ['a', 'b'] });
 
+const spinner = output.getSpinner(LogLevel.Info, 'dots', 'Testing');
 // tslint:disable-next-line: no-floating-promises
 delay(3).then(() => {
   spinner.succeed('Succeeded');
